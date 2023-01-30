@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>photogallery</title>
+</head>
+<body>
+    <section>
+        <div class="item"><img src="./images/IMG_2057.jpg" alt="">
+            <div class="caption">
+                <h1> Now Playing: Foklore by Taylorswift</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium a iusto ex nemo, 
+                    consequatur et minus omnis voluptatibus natus ab.</p>
+            </div>
+        </div>
+        <div class="item"><img src="./images/IMG_1392.jpg" alt="">
+            <div class="caption">
+                <h1> Now Playing: Beach By Giveon</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium a iusto ex nemo, 
+                    consequatur et minus omnis voluptatibus natus ab.</p>
+            </div>
+        </div>
+        <div class="item"><img src="./images/IMG_1391.jpg" alt="">
+            <div class="caption">
+                <h1>Now Playing: Coldest Winter by Kanye West</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium a iusto ex nemo, 
+                    consequatur et minus omnis voluptatibus natus ab.</p>
+            </div>
+        </div>
+        <div class="item"><img src="./images/IMG_2055.jpg" alt="">
+            <div class="caption">
+                <h1> Now Playing: Orange By Frank Ocean</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium a iusto ex nemo, 
+                    consequatur et minus omnis voluptatibus natus ab.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const items = document.querySelectorAll('.item');
+        items.forEach(item=>{
+          item.addEventListener('click',()=>{
+            items.forEach(item=> item.classList.remove('show'))
+            item.classList.add('show')
+          })
+        })
+    </script>
+</body>
+</html>
